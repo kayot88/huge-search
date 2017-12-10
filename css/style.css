@@ -67,7 +67,7 @@ section[class*="se-"]{
 	font-size: 0;
 }
 .container:last-child{
-margin-right: 0;
+	margin-right: 0;
 }
 
 /*photo*/
@@ -153,8 +153,8 @@ p{
 	margin: 0 0 15px 15px;
 }
 @media (max-width: 1000px) {
-section[class*="se-"]{
-	width: 100%;
+	section[class*="se-"]{
+		width: 100%;
 	}
 
 }
