@@ -1,4 +1,4 @@
-/*dev*/
+/*branch dev*/
 @keyframes _transparent {
 	from { opacity: 0; }
 	to { opacity: 1;}
@@ -30,7 +30,7 @@ body {
 	color: #ec5a62;
 	outline: none;
 }
-input[type="search"]::placeholder { color: #c2c2c2; } 
+input[type="search"]::placeholder { color: #c2c2c2;} 
 
 .se-button{
 	width: 15%;
@@ -40,8 +40,8 @@ input[type="search"]::placeholder { color: #c2c2c2; }
 	color: #C2C2C2;
 	border: none;
 	background: transparent;
-	animation: _transparent 3s;
-	transition: .5s ease transform;
+	animation: _transparent 5s;
+	transition: 2s ease transform;
 
 }
 .se-button:hover{
@@ -55,21 +55,26 @@ h2{
 	color: #C2C2C2;
 	margin: 0;
 	padding-bottom: 20px;
+	display: inline-block;
 }
 section[class*="se-"]{
 	display: inline-block;
-	width: calc((100% / 3) - 15px);
+	width: calc((100% / 3));
 }
 .container{
 	width: 80%;
 	margin: 0 auto 50px auto;
 	font-size: 0;
 }
-
+.container:last-child{
+margin-right: 0;
+}
 
 /*photo*/
 .left-img{
-	padding: 0 0 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px;
 	border-radius: 50%;
 }
 .left-img:hover {
@@ -96,6 +101,18 @@ section[class*="se-"]{
 	transform: rotateX(35deg);
 
 }
+.middle-img{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px;
+	border-radius: 5px 0 0 5px;
+}
+.right-img{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px;
+	border-radius: 5px 0 0 5px;
+}
 .se-left-photo{
 	display: block;
 	margin: auto;
@@ -105,23 +122,28 @@ section[class*="se-"]{
 	font-weight: 700;
 	text-decoration: none;
 	color: #c2c2c2;
+	cursor: pointer;
 
 
 }
 .se-left-photo:hover{
 	color: #EC5A62;
 }
-.se-left-item{
-	display: block;
+.se-left-item{ 	
+	display: list-item;
 	background-color: #E4E4E5;
 	border-radius: 5px;
 	margin-bottom: 4px;
 }
+.se-left-item:hover{
+	background-color: #e4f4E5;
+}
 .se-left-list{
-	/*display: inline-block;*/
-	/*vertical-align: middle;*/
-	margin: 0;
-	margin: 15px;
+	margin: 15px 30px 15px 0;
+	padding: 0;
+}
+.se-right-list{
+	margin: 15px 0 15px 0;
 	padding: 0;
 }
 p{
@@ -130,9 +152,9 @@ p{
 	padding: 0;
 	margin: 0 0 15px 15px;
 }
-@media (max-width: 768px) {
-section{
-display: block;
-width: 100%;
+@media (max-width: 1000px) {
+section[class*="se-"]{
+	width: 100%;
 	}
+
 }
